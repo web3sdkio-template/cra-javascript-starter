@@ -2,7 +2,7 @@ import React from "react";
 import { createRoot } from "react-dom/client";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
-import { ChainId, ThirdwebProvider } from "@thirdweb-dev/react";
+import { ChainId, Web3sdkioProvider } from "@web3sdkio/react";
 import "./styles/globals.css";
 
 // This is the chainId your dApp will work on.
@@ -12,9 +12,9 @@ const container = document.getElementById("root");
 const root = createRoot(container);
 root.render(
   <React.StrictMode>
-    <ThirdwebProvider desiredChainId={activeChainId}>
+    <Web3sdkioProvider desiredChainId={activeChainId}>
       <App />
-    </ThirdwebProvider>
+    </Web3sdkioProvider>
   </React.StrictMode>
 );
 

@@ -7,8 +7,8 @@
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.2.0",
     "@testing-library/user-event": "^14.2.0",
-    "@thirdweb-dev/react": "^3",
-    "@thirdweb-dev/sdk": "^3",
+    "@web3sdkio/react": "^3",
+    "@web3sdkio/sdk": "^3",
     "ethers": "^5.6.8",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
@@ -20,7 +20,7 @@
     "build": "react-app-rewired build",
     "test": "react-app-rewired test",
     "eject": "react-scripts eject",
-    "deploy": "yarn build && npx thirdweb@latest upload build"
+    "deploy": "yarn build && npx web3sdkio@latest upload build"
   },
   "eslintConfig": {
     "extends": [
